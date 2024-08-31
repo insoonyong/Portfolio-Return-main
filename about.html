@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <input type="checkbox" id="active" aria-hidden="true">
+    <label for="active" class="menu-btn" aria-label="Toggle navigation menu">
+      <div class="menu-tex">
+      <ul>MENU
+      </ul>
+      </div>
+        <i class="fas fa-bars"></i>
+    </label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <section id="about">
+        <div class="profile">
+          <div class="profileinner">
+            <img src="images/my.jpg" alt="이미지">
+          </div>
+          <div class="profiletext">
+            <div class="imgtext">
+              <div class="the-goods">hello!!</div>
+            </div>
+            <div class="irregular-text">
+              <span class="text-item item-1" data-modal="modal1">my name</span>
+              <span class="text-item item-2" data-modal="modal2">resume<br>(이력서)</span>
+              <span class="text-item item-3" data-modal="modal3">my skills</span>
+            </div>
+            
+            <!-- Modal 1 -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="nametxt">
+                <p>name: <span>인 순용</span></p>
+                <p>year: <span>1993.09.10</span></p>
+                <p>MBTI: <span>INFJ</span></p>
+              </div>
+              </div>
+            </div>
+            
+            <!-- Modal 2 -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="insoon">
+                <img src="images/이력서.jpeg" alt="#">
+              </div>
+                <button class="gradient-button"><a href="경력 총 6년3개월 인순용의 이력서 입니다_dls910-ww2vbmv.pdf">전체보기</a></button>
+              </div>
+            </div>
+            
+            <!-- Modal 3 -->
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="sklilimg">
+                  <img src="images/html.png" alt="html">
+                  <img src="images/css.png" alt="css">
+                  <img src="images/자바스크립트.png" alt="js">
+                  <img src="images/pig-.png" alt="pig">
+                  <img src="images/포토.png" alt="ps">
+                  <img src="images/일러스트.png" alt="ai">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="js/about.js"></script>
+</body>
+</html>
